@@ -54,6 +54,6 @@ module "eks" {
 
     tags = {
         environment = "development"
-        applicationm = "ansible"
+        application = "ansible"
     }
 }
