@@ -1,0 +1,11 @@
+kubectl apply -f adservice-deployment.yaml -n microservices
+kubectl apply -f cartservice-deployment.yaml -n microservices
+kubectl apply -f checkoutservice-deployment.yaml -n microservices
+kubectl apply -f currencyservice-deployment.yaml -n microservices
+kubectl apply -f emailservice-deployment.yaml -n microservices
+kubectl apply -f frontend-deployment.yaml -n microservices
+kubectl apply -f paymentservice-deployment.yaml -n microservices
+kubectl apply -f productcatalogservice-deployment.yaml -n microservices
+kubectl apply -f recommendationservice-deployment.yaml -n microservices
+kubectl apply -f redis-cart-deployment.yaml -n microservices
+kubectl apply -f shippingservice-deployment.yaml -n microservices

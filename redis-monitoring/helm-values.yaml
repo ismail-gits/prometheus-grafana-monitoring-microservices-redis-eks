@@ -1,0 +1,7 @@
+serviceMonitor: 
+  enabled: true
+  interval: 10s
+  labels:
+    release: prometheus
+
+redisAddress: redis://redis-cart:6379

@@ -1,0 +1,28 @@
+{
+    "annotations": {
+      "description": "CPU load on host is over 50%\n Value = 98.2500000000002\n Instance = 10.0.3.34:9100\n",
+      "summary": "Host CPU load high"
+    },
+    "endsAt": "2024-05-15T18:06:36.484Z",
+    "fingerprint": "48a2bde815fa2241",
+    "receivers": [
+      {
+        "name": "monitoring/main-rules-alert-config/email"
+      }
+    ],
+    "startsAt": "2024-05-15T18:02:36.484Z",
+    "status": {
+      "inhibitedBy": [],
+      "silencedBy": [],
+      "state": "active"
+    },
+    "updatedAt": "2024-05-15T18:02:36.489Z",
+    "generatorURL": "http://prometheus-kube-prometheus-prometheus.monitoring:9090/graph?g0.expr=100+-+%28avg+by+%28instance%29+%28rate%28node_cpu_seconds_total%7Bmode%3D%22idle%22%7D%5B2m%5D%29%29+%2A+100%29+%3E+50&g0.tab=1",
+    "labels": {
+      "alertname": "HostHighCpuLoad",
+      "instance": "10.0.3.34:9100",
+      "namespace": "monitoring",
+      "prometheus": "monitoring/prometheus-kube-prometheus-prometheus",
+      "severity": "warning"
+    }
+  }
