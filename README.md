@@ -56,7 +56,10 @@ Ensure you have the following installed before proceeding:
      ```
 
 3. **Deploy Microservices**:
-   - Apply the Kubernetes deployment and service configurations for each microservice using `kubectl apply -f <service-name>-deployment.yaml -n microservices`.
+    - Apply the Kubernetes deployment and service configurations for each microservice:
+        ```bash
+        kubectl apply -f <service-name>-deployment.yaml -n microservices
+        ``` 
 
 4. **Import Helm Chart for Prometheus**:
     - Add the Prometheus Community Helm repository:
