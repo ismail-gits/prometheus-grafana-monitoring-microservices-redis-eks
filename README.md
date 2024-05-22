@@ -70,7 +70,7 @@ Ensure you have the following installed before proceeding:
     - Install the Prometheus chart from the Prometheus Community repository:
         ```bash
         helm install prometheus prometheus-community/kube-prometheus-stack
-     ```
+        ```
 
 5. **Set up Redis Monitoring**:
    - Apply the Redis monitoring configurations located in the `redis-monitoring` directory.
